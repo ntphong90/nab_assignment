@@ -36,7 +36,7 @@ $ docker-compose up -d
 Assignment flow:
 - User can search product with name/brand/color, sort 
 - Query of user will store to log db for advertising
-- 2 services to demostrade microserice: api service, log service
+- 2 services to demonstrate microserice: api service, log service
    + api service use middleware to emit an event (logger.middleware.ts)
    + log service listen to this event and add log to database (log.controller.ts)
    ```
