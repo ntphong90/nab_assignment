@@ -61,6 +61,10 @@ curl http://localhost:3000/product?sort_by=name&sort=desc&page=0&color=red
 
 Check log database to see log event
 
+Swagger API
+
+``` http://localhost:3000/api/#/default/ProductController_products ```
+
 
 
 
