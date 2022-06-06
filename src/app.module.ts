@@ -22,7 +22,14 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
     ProductModule,
     LogModule,
     ClientsModule.register([
-      { name: 'MATH_SERVICE', transport: Transport.TCP },
+      {
+        name: 'MATH_SERVICE',
+        transport: Transport.TCP,
+        options: {
+          host: process.env.LOG_HOST,
+          port: 3001,
+        },
+      },
     ]),
   ],
   controllers: [AppController, ProductController, LogController],

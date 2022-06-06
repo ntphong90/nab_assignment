@@ -5,6 +5,7 @@ services:
     image: nestjs-api-dev
     environment:
       - DB_HOST=mongodb://mongodb/nest
+      - LOG_HOST=nestjs_api_log
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -23,6 +24,7 @@ services:
     image: nestjs-api-log
     environment:
       - DB_HOST=mongodb://mongodb/nest
+      - LOG_HOST=nestjs_api_log
     build:
       context: .
       dockerfile: ./DockerfileLog
