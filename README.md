@@ -20,7 +20,7 @@ $ npm run start:dev
 ## Test
 
 ```bash
-# unit tests
+# unit tests was set up but i has not implemented any test case
 $ npm run test
 ```
 ## Docker-compose (recommend)
